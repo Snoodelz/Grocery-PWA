@@ -31,3 +31,4 @@ jobs:
           source: "dist/"
           strip_components: 1
           target: "/var/www/html"
+          args: -v  # Add the verbose option to get more detailed output
