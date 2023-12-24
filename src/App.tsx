@@ -145,7 +145,7 @@ function App() {
 						value={inputValue}
 						onChange={(e) => setInputValue(e.target.value)}
 					/>
-					<Button className="w-full py-2" type="submit">
+					<Button className="w-full py-2 bg-green-600" type="submit">
 						Lägg till
 					</Button>
 				</form>
