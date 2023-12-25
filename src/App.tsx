@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import PocketBase from "pocketbase";
 
-const pb = new PocketBase("https://lumopi.duckdns.org/pb");
+const pb = new PocketBase("https://pb.lumopi.duckdns.org/");
 
 interface Grocery {
 	collectionId: string;
@@ -94,7 +94,7 @@ function App() {
 					</Button>
 				</div>
 			</header>
-			<section className="pt-16 py-4 px-3 md:px-6 bg-white dark:bg-gray-900 pb-28">
+			<section className="pt-8 px-3 md:px-6 bg-white dark:bg-gray-900 pb-28">
 				<div className="container mx-auto">
 					<ul ref={animationParent}>
 						{groceries.map((grocery) => (
