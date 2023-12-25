@@ -80,7 +80,7 @@ function App() {
 		};
 	}, []);
 	return (
-		<main className="min-h-screen bg-gray-100 dark:bg-gray-900">
+		<main className="min-h-screen bg-white dark:bg-gray-900">
 			<header className="bg-white dark:bg-gray-800 shadow w-full z-10">
 				<div className="container mx-auto py-3 px-6 flex items-center justify-between">
 					<h1 className="text-2xl font-bold text-gray-800 dark:text-white">
