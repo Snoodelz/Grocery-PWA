@@ -21,13 +21,13 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: "Push to server"
-        uses: appleboy/scp-action@v0.1.4
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v5.0.0
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          source: "dist/"
-          strip_components: 1
-          target: "/var/www/grocery-app"
+          ARGS: -avzr --delete
+          SOURCE: "./dist"
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          TARGET: /var/www/grocery-app/
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}

@@ -84,7 +84,7 @@ function App() {
 			<header className="bg-white dark:bg-gray-800 shadow w-full z-10">
 				<div className="container mx-auto py-3 px-6 flex items-center justify-between">
 					<h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-						Inköpslista
+						Inköpslista NY
 					</h1>
 					<Button
 						className="md:inline-flex bg-red-600"
