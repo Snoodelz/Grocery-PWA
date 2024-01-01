@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import PocketBase from "pocketbase";
 
-const pb = new PocketBase("https://pb.lumopi.se/");
+const pb = new PocketBase("https://lumopi.se/pb");
 
 interface Grocery {
 	collectionId: string;
